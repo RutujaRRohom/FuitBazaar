@@ -1,0 +1,370 @@
+.login-text {
+  margin-left: 95%;
+}
+
+.site-title {
+  background: none;
+  border: none;
+  color: black;
+  /* or any color you want */
+  text-decoration: underline;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  /* Align items to the left */
+  padding: 20px;
+  /* Add padding for spacing */
+  border-bottom: 1px solid #ccc;
+}
+
+
+.container {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Full viewport height */
+}
+
+.login-form {
+  width: 400px;
+  /* Set the width of the form */
+  padding: 20px;
+  /* Add some padding */
+  border: 1px solid #ccc;
+  /* Add a border */
+  border-radius: 5px;
+  /* Add border radius */
+  background-color: #f9f9f9;
+  margin-left: 40%;
+  /* Set background color */
+}
+
+.form-content {
+  margin-top: 40%;
+
+}
+
+/* Style form controls */
+.form-control {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style button */
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Style link */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.shop-now-p {
+  color: #686868;
+  line-height: 1.8;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+}
+
+.shop-now-button {
+  font-family: monospace !important;
+  font-weight: normal !important;
+  padding: 14px 25px !important;
+  border: none !important;
+  background: #be0b06 !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  line-height: 14px !important;
+}
+
+.shop-now-button:hover {
+  background-color: black !important;
+}
+
+.hero-banner {
+  position: relative;
+  animation: banner 3s infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes banner {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  25% {
+    left: 0px;
+    top: 10px;
+  }
+
+  50% {
+    left: 0px;
+    top: 0px;
+  }
+
+  75% {
+    left: 0px;
+    top: 10px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.banner-image {
+  background-image: url("../bg-img/banner_img.jpg");
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.banner-text {
+  font-family: "Great Vibes", cursive;
+  color: #fff;
+  line-height: 1;
+  position: absolute;
+  top: 43%;
+  left: -4%;
+  right: 0;
+
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .hero-banner {
+    height: 218px !important;
+  }
+}
+
+@media only screen and (max-width: 1385px) {
+  .hero-banner {
+    width: 100%;
+    min-width: 250px;
+    height: auto;
+  }
+}
+
+/* ---show-now------ */
+.shop-now-cont {
+  background-image: url("../bg-img/shop_now.jpg");
+}
+
+.shop-now-h1 {
+  font-family: "Playfair Display";
+  font-weight: normal;
+  color: #353535;
+
+  font-size: 70px;
+  line-height: 72px;
+}
+
+.shop-now-p {
+  color: #686868;
+  line-height: 1.8;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+}
+
+.shop-now-button {
+  font-family: monospace !important;
+  font-weight: normal !important;
+  padding: 14px 25px !important;
+  border: none !important;
+  background: #be0b06 !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  line-height: 14px !important;
+}
+
+.shop-now-button:hover {
+  background-color: black !important;
+}
+
+/* .cont-margin {
+  margin-top: 9em;
+} */
+
+.row {
+  /* align-items: center; */
+  display: flex;
+}
+
+.cont-pd {
+  padding-top: 100px;
+}
+
+.p-6 {
+  padding: 8rem !important;
+}
+
+
+.card {
+  width: 18rem;
+  background: #f2f2f2 !important;
+}
+
+.card-body {
+  padding: 0 24px;
+}
+
+.card-title {
+  font-family: serif;
+  font-size: 1.5em !important;
+  font-weight: 400 !important;
+  line-height: 1.1 !important;
+  color: #353535;
+}
+
+.card-text {
+  color: #686868 !important;
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+}
+
+.card-price {
+  font-size: 26px;
+  color: #be0b06;
+}
+
+.card-button {
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #be0b06 !important;
+  border-color: #be0b06 !important;
+  overflow: hidden;
+  box-shadow: 0 0 1px transparent;
+}
+
+/* -----header---- */
+.head-h1 {
+  font-size: 75px;
+  font-family: layfair Display, serif;
+  color: #353535;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.mt-6 {
+  margin-top: 5rem !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fruit-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 15px;
+}
+
+.fruit-item {
+  border: 1px solid #a8a8a8;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.fruit-item img {
+  width: 100%;
+  border-radius: 5px;
+  height: 50%;
+}
+
+.fruit-details {
+  margin-top: 10px;
+}
+
+.fruit-details h3 {
+  margin: 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #009688;
+}
+
+.description {
+  color: #555;
+}
+
+
+.cart-icon-container {
+  margin-left: 95%;
+  /* Pushes the cart icon to the right */
+  margin-top: 20px;
+  /* Adjust this value as needed */
+}
+
+.cart-icon {
+  font-size: 24px;
+  /* Adjust the size of the cart icon */
+}
+
+.table-body tr,
+td {
+  background-color: #a6a6a6;
+  margin: 20px;
+  border-collapse: collapse;
+  /* border: 1px solid green */
+}
+
+.cart {
+  width: 50%;
+  margin-top: 3%;
+}
+
+.cart-background {
+  /* border: 1px solid red; */
+  /* margin-top: 40%; */
+  margin-left: 40%;
+  margin-right: 40%;
+  background-color: #f2f2f2;
+
+}
