@@ -19,7 +19,7 @@ const ShopNowCont= ( )=> {
               <img className="" src="images/veg_rack.png" alt="rack" />
             </Col>
             <Col className="p-6">
-              <h1 className="shop-now-h1">Why veggie super market?</h1>
+              <h1 className="shop-now-h1">Why Fruit bazaar?</h1>
               <p className="shop-now-p mt-4">
                 We shorten the time between the farm and your table. Our motto
                 is to deliver the local food which is better, fresher and

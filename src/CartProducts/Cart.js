@@ -16,14 +16,15 @@ const CartForm = () => {
     
   }
   const location  =  useLocation()
-  console.log("location",location.state.CartItems)
+    // console.log("location",location.state.CartItems)
+   // location.prop.CartItems
   const cartItems =location.state.CartItems;
     console.log("cartitems printed",cartItems)
    
-    const totalPrice = cartItems?.reduce((total, item) => total + item?.price, 0);
+    const totalPrice = cartItems?.reduce((total, item) => total + item.price, 0);
     console.log("totalPrice",totalPrice);
   
-      const sum = cartItems?.reduce((previousValue, currentItem) => previousValue + currentItem?.price, 0);
+      const sum = cartItems.reduce((previousValue, currentItem) => previousValue + currentItem?.price, 0);
       console.log("cartItems sum",cartItems, sum);
 
   return (
@@ -40,7 +41,7 @@ const CartForm = () => {
             <tbody>
               <tr className="table-row">
                 <th className="total-heading">Subtotal</th>
-                <td className="total-price">${sum?.toFixed(2)}.00</td>
+                <td className="total-price">${sum.toFixed(2)}.00</td>
               </tr>
               <tr className="table-row">
                 <th className="total-heading">Delivery</th>
@@ -48,7 +49,7 @@ const CartForm = () => {
               </tr>
               <tr className="table-row">
                 <th className="total-heading">Amount Payable</th>
-                <td className="total-price">${sum?.toFixed(2)}.00</td>
+                <td className="total-price">${sum.toFixed(2)}.00</td>
               </tr>
             </tbody>
           </Table>

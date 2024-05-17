@@ -3,7 +3,7 @@
 import { Fragment, useState } from "react";
 import {  toast } from "react-toastify";
 
-import "../routes/Routes.js"
+
 import { Home } from "../Home/Home.js";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import ShopNowCont from "../Home/ShopNowCont.js";

@@ -66,7 +66,7 @@ import grapes from "../img/grapes.jpg";
       {
         
         id: 6,
-        name: 'gava',
+        name: 'guava',
         price: 3.49,
         description: 'Juicy and refreshing sweet, rich in Vitamin A.',
         image: gava,
@@ -116,9 +116,7 @@ import grapes from "../img/grapes.jpg";
       
   ];
   const Store = () => {
-    // Sample data for fruits
-  
-    
+
   
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -134,9 +132,7 @@ const handleAddCart =(productID) =>{
   setCartItems(prevItems => [...prevItems, product]); 
 }
 
-const toggleCartForm = () => {
-  setShowCartForm(prevState => !prevState);
-};
+
 const goToCartPage = () => {
   navigate('/cartItem',{state:{CartItems:cartItems}}); // Navigate to '/cartItem' route
 };
@@ -147,9 +143,7 @@ const goToCartPage = () => {
        <div className="cart-icon-container" >
      <FaShoppingCart className="cart-icon" onClick={goToCartPage} />
      <span className="cart-count">{count}</span>
-     {/* {showCartForm && < CartForm cartItems={cartItems}  toggleCartForm={toggleCartForm}/>}      */}
-      {/* <CartForm cartItems={cartItems}    /> */}
-     {/* {showCartForm && <CartForm cartItems={cartItems} toggleCartForm={toggleCartForm} />} */}
+   
 
    </div>
     <div className="fruit-list">
